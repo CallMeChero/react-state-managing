@@ -27,7 +27,7 @@ export default function Detail(props) {
         </select>
       <p>
         <button disabled={!sku} className="btn btn-primary" onClick={() =>{
-          props.addToCart();
+          props.addToCart(product.id, sku);
           navigate("/cart")
         }}>Add to cart</button>
       </p>
